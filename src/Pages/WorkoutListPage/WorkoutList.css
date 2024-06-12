@@ -1,0 +1,60 @@
+.workoutlist-page{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 9, 24);
+    padding: 30px 0;
+}
+
+.workoutlist-cont{
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.workoutlist-cont>p{
+    padding: 0 3px;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.workouts{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+
+.divider{
+    height: 1px;
+    background-color: rgb(98, 98, 98);
+}
+
+@media screen and (max-width: 1250px) {
+    .workoutlist-cont{
+        width: 950px;
+    }
+    .workouts{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .workoutlist-cont{
+        width: 650px;
+    }
+    .workouts{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 615px) {
+    .workoutlist-cont{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .workoutlist-cont>p{
+        font-size: 1.2rem;
+    }
+    .workouts{
+        grid-template-columns: 100%;
+    }
+}

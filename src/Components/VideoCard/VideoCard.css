@@ -1,0 +1,74 @@
+.video-card-comp{
+  width: 300px; /* Adjust width as needed */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.video-card-comp>p{
+  color: white;
+}
+.video-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* Adjust height as needed */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05); /* Optional hover effect: Scale on hover */
+  }
+  
+  .card-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-card>.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+  }
+  @media screen and (max-width: 1000px) {
+    .video-card-comp{
+      width: 200px; /* Adjust width as needed */
+      height: 130px;
+    }
+}
+@media screen and (max-width: 700px) {
+  .video-card-comp{
+    width: 270px; /* Adjust width as needed */
+    height: 180px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .video-card-comp{
+    width: 200px; /* Adjust width as needed */
+      height: 130px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .video-card-comp{
+    width: 300px; /* Adjust width as needed */
+      height: 200px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .video-card-comp{
+    width: 250px; /* Adjust width as needed */
+      height: 170px;
+  }
+}
+  
+  

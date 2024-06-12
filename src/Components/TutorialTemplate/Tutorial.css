@@ -1,0 +1,48 @@
+.tutorial-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+}
+.tutorial-comp>h1{
+    font-size: 2rem;
+    color: white;
+}
+.tutorial-comp-cont{
+    width: 1300px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media screen and (max-width: 1300px) {
+    .tutorial-comp-cont{
+        width: 1000px;
+        grid-template-columns: 34% 33% 33%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .tutorial-comp-cont{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tutorial-comp-cont{
+        width: 580px;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 580px) {
+    .tutorial-comp-cont{
+        width: 450px;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .tutorial-comp-cont{
+        width: 90%;
+        grid-template-columns: 100%;
+    }
+}

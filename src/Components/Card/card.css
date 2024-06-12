@@ -1,0 +1,51 @@
+.card-comp{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(18, 17, 21);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: end;
+    text-align: center;
+}
+
+.card-comp:hover{
+    transform: scale(1.03);
+    transition: 700ms;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-comp p{
+    color: white;
+    font-size: 1.2rem;
+    width: 85%;
+}
+.link{
+    width: 85%;
+}
+.checkout{
+    margin-bottom: 10px ;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(110, 105, 105);
+}
+
+
+@media screen and (max-width: 470px){
+    .card-comp{
+        width: 330px;
+        height: 500px;
+    }
+}
+

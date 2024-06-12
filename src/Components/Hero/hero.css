@@ -1,0 +1,107 @@
+.hero-container>h1{
+    color: white;
+}
+.hero-container>p{
+    color: white;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-container>h1{
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+    letter-spacing: 12px;
+}
+.hero-container>p{
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+.hero-social{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+
+.hero-container li img{
+    width: 50px;
+    height: 50px;
+}
+
+.btn-subscription{
+    margin-top: 30px;
+    width: 300px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-subscription:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 4px 3px rgb(255, 255, 255),
+                0 -4px 3px rgb(255, 255, 255),
+                4px 0 3px rgb(255, 255, 255),
+                -4px 0 3px rgb(255, 255, 255);
+}
+.btn-subscription:active{
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 3px rgb(255, 255, 255),
+                0 -4px 3px rgb(255, 255, 255),
+                4px 0 3px rgb(255, 255, 255),
+                -4px 0 3px rgb(255, 255, 255);
+}
+.hero-end{
+    width: 80vw;
+    height: 1px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 570px){
+    .logo{
+       max-width: 90%;
+    }
+    .hero-container>h1{
+        margin-top: 20px;
+    }
+    .hero-container>p{
+        padding-top: 20px;
+    }
+    .hero-social{
+        width: 90%;
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .hero-end{
+        width: 92vw;
+    }
+}
+@media screen and (max-width: 380px){
+    .hero-container h1{
+        margin-top: 40px;
+        font-size: 37px;
+    }
+    .hero-container p{
+        padding-top: 18px;
+    }
+    .hero-container li img{
+        width: 35px;
+        height: 35px;
+    }
+}

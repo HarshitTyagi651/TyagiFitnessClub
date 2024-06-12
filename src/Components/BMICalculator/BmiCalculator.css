@@ -1,0 +1,106 @@
+.bmiCal-comp{
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bmiCal-comp label{
+    font-size: 1.2rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.bmiCal-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bmiCal-comp input{
+    width: 50%;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    outline: none;
+    border: 2px solid rgb(69, 158, 17);
+    background-color: rgb(171, 255, 184);
+    border-radius: 5px;
+}
+
+.bmi-weight{
+    text-align: center;
+}
+
+.bmi-height{
+    text-align: center;
+}
+
+.bmiCal-comp button{
+    width: fit-content;
+    padding: 5px 50px;
+    font-size: 1.1rem;
+    background-color: rgb(171, 255, 184);
+    border: 2px solid rgb(69, 158, 17);
+    border-radius: 5px;
+}
+.bmiCal-comp button:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 400ms;
+}
+.bmiCal-right{
+    display: flex;
+    width: 40%;
+}
+.bmi-result{
+    width: 93%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(69, 158, 17);
+}
+.bmi-h1{
+    color: black;
+    font-size: 1.3rem;
+}
+.bmi-result-num{
+    font-size: 1rem;
+    color: black;
+    
+}
+.bmi-result-num span{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1165px) {
+    .bmiCal-comp{
+        flex-direction: column;
+    }
+    .bmiCal-left{
+        width: 80%;
+        align-items: center;
+    }
+    .bmiCal-right{
+        width: 80%;
+        justify-content: center;
+    }
+    .bmi-result{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 725px){
+    .bmiCal-comp input{
+        width: 153px;
+        margin-left: 0;
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width: 621px){
+    .bmi-result{
+        width: 153px;
+    }
+}

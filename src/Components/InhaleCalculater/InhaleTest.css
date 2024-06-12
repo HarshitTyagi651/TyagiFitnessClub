@@ -1,0 +1,63 @@
+.inhale-stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .inhale-heading{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .inhale-para-setps{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .inhale-steps{
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .inhale-time {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .inhale-progress-container {
+    width: 80%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .inhale-progress-bar {
+    height: 100%;
+    transition: width 0.1s linear;
+  }
+  
+  
+  .inhale-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .inhale-button:hover {
+    background-color: #0056b3;
+  }
+
+  .inhale-condition p{
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 1.9rem;
+  }

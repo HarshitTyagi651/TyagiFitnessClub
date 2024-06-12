@@ -1,0 +1,167 @@
+.card3-comp{
+    width: 700px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.card3-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card3-left img{
+        width: 85%;
+        border-radius: 7px;
+}
+
+.card3-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0;
+}
+
+.card3-right>h1{
+    letter-spacing: 3px;
+    color: rgb(131, 156, 255);
+}
+.card3-right>p{
+    color: white;
+}
+
+.card3-right label{
+    margin-top: 20px;
+    color: rgb(200, 196, 196);
+    margin-bottom: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+.trainer-exp{
+    color: rgb(107, 171, 238);
+    font-size: 1.2rem;
+    margin-left: 12px;
+}
+
+.trainer-fee{
+    color: rgb(74, 238, 115);
+    font-size: 1.2rem;
+    margin-left: 12px;
+}
+.items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer-likes{
+    font-size: 1.2rem;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trainer-likes img{
+    width: 25px;
+    margin-right: 5px; 
+}
+.trainer-desc{
+    font-size: 1.05rem;
+    width: 95%;
+}
+
+.trainer-more{
+    width: 95%;
+    margin-top: 20px;
+    padding: 7px 0;
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+
+.trainer-more:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+
+@media screen and (max-width: 750px) {
+    .card3-comp{
+        width: 500px;
+    }
+
+    .card3-right>h1{
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+    }
+    .card3-right>p{
+        font-size: 0.6rem;
+    }
+    
+    .card3-right label{
+        margin-top:5px;
+        font-size: 0.8rem;
+    }
+    .trainer-desc{
+        font-size: 0.9rem;
+    }
+    .trainer-exp{
+        font-size: 0.9rem;
+    }
+    
+    .trainer-fee{
+        font-size: 0.9rem;
+    }
+    
+    .trainer-likes{
+        font-size: 0.9rem;
+    }
+    .trainer-likes img{
+        width: 19px;
+    }
+    
+    
+    .trainer-more{
+        width: 90%;
+        margin-top: 10px;
+        padding: 5px 0;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card3-comp{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .desc-label{
+        display: none;
+    }
+    .trainer-desc{
+        display: none;
+    }
+    .trainer-more{
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+    .trainer-exp{
+        margin-left: 4px;
+    }
+    .trainer-fee{
+        margin-left: 4px;
+    }
+    .trainer-likes{
+        margin-left: 4px;
+    }
+}

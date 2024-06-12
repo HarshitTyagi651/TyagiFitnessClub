@@ -1,0 +1,148 @@
+.fitnesseval-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: rgb(226, 253, 218);
+}
+.fitness-h1{
+    color: black;
+    font-size: 1.7rem;
+}
+.fitness-h2{
+    color: black;
+    font-size: 1.5rem;
+}
+.fitness-p{
+    color: black;
+    font-size: 1rem;
+}
+.fitnesseval-heading{
+    width: 1200px;
+    color: black;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.fitness-def{
+    width: 1200px;
+    display: flex;
+}
+.def-left{
+    width: 60%;
+    padding: 20px 0;
+}
+.def-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.fitness-divider{
+    margin-top: 30px;
+    width: 95%;
+    height: 1px;
+    background-color: rgb(147, 147, 147);
+}
+
+.eval-tests{
+    width: 1200px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bmi-test{
+    display: flex;
+    flex-direction: column;
+}
+
+.bmi-content{
+    display: flex;
+}
+
+.bmi-left{
+    width: 60%;
+    
+}
+
+.bmi-right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    justify-content: center;
+}
+
+.bmi-calculator{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media screen and (max-width:1300px) {
+    .fitnesseval-heading{
+        width: 90%;
+    }
+    .fitness-def{
+        width: 90%;
+    }
+    .eval-tests{
+        width: 90%;
+    }
+    .bmi-right img{
+        width: 300px;
+        height: 200px;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .fitness-def{
+        width: 90%;
+        flex-direction: column;
+    }
+    .def-left{
+        width: 100%;
+    }
+    .def-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .def-right img{
+        width: 80%;
+    }
+    .bmi-content{
+        flex-direction: column;
+    }
+    .bmi-left{
+        width: 100%;
+        
+    }
+    
+    .bmi-right{
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .bmi-right img{
+        width: 400px;
+        height: 230px;
+    }
+}
+@media screen and (max-width: 470px){
+    .fitnesseval-heading{
+        font-size: 2rem;
+    }
+    .bmi-right img{
+        width: 240px;
+        height: 140px;
+    }
+}

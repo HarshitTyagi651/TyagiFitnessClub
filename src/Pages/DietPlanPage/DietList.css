@@ -1,0 +1,116 @@
+.diet-plan-page{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.diet-plan-page>p{
+    color: rgb(193, 193, 193);
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0 20px;
+}
+.diet-plan-cont{
+    width: 900px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.veg-diet{
+    width: 400px;
+    height: 500px;
+    background-image: url(../../Assets/TypesofDiet/veg.jpg);
+    background-size: cover;
+    filter: opacity(0.6);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.veg-diet:hover{
+    cursor: pointer;
+    filter: opacity(0.8);
+}
+
+.veg-diet>p{
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    filter: opacity(1);
+    font-weight: 300;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.nonveg-diet{
+    width: 400px;
+    height: 500px;
+    background-image: url(../../Assets/TypesofDiet/nonveg.jpg);
+    background-size: cover;
+    filter: opacity(0.6);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nonveg-diet:hover{
+    cursor: pointer;
+    filter: opacity(0.8);
+}
+.nonveg-diet>p{
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    filter: opacity(1);
+    font-weight: 300;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .diet-plan-cont{
+        width: 650px;
+    }
+    .veg-diet{
+        width: 300px;
+    }
+    .nonveg-diet{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .diet-plan-cont{
+        width: 470px;
+    }
+    .veg-diet{
+        width: 200px;
+        height: 300px;
+    }
+    .nonveg-diet{
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .diet-plan-cont{
+        width: 100%;
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+    .veg-diet{
+        width: 290px;
+        height: 400px;
+    }
+    .nonveg-diet{
+        width: 290px;
+        height: 400px;
+    }
+}

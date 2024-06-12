@@ -1,0 +1,40 @@
+.trainers-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.trainers-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.trainers-heading{
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+    color: white;
+}
+.trainers{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+    .trainers{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .trainers-heading{
+        font-size: 1.6rem;
+    }
+}
+

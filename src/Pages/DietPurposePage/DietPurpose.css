@@ -1,0 +1,56 @@
+.vegdiet-page{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 9, 24);
+    padding: 30px 0;
+}
+
+.vegdiet-cont{
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.vegdiet-cont>p{
+    padding: 0 3px;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.diet-purpose{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .vegdiet-cont{
+        width: 950px;
+    }
+    .diet-purpose{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .vegdiet-cont{
+        width: 650px;
+    }
+    .diet-purpose{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 615px) {
+    .vegdiet-cont{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .vegdiet-cont>p{
+        font-size: 1.2rem;
+    }
+    .diet-purpose{
+        grid-template-columns: 100%;
+    }
+}

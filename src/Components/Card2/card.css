@@ -1,0 +1,59 @@
+.card2-comp{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 8px;
+}
+.card2-comp:hover{
+    transform: scale(1.03);
+    transition: 700ms;
+}
+
+
+.card2-container{
+    width: 98%;
+    padding: 12px;
+}
+
+.card2-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.description{
+    font-size: 1.2rem;
+    margin-top: 12px;
+    color: white;
+}
+
+.price{
+    font-size: 1.4rem;
+    margin-top: 6px;
+    color: rgb(48, 208, 48);
+}
+
+.card2-container .btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card2-container .btns button{
+    width: 30%;
+    padding: 6px 0px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+.card2-container .btns button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
